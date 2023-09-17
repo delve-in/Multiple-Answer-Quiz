@@ -11,23 +11,29 @@
 
 <body>
     <header>
-        <a>View Highscore</a>
+        <a href="Highscore.html">View Highscore</a>
         <p id="time">Time</p>
     </header>
     <main>
-        <div>
+        <div class="container">
             <h1>Coding Quiz Challenge</h1>
+            <h2 id="sub-heading">"Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds"</h2>
             <ul id="choise">
-                <li data-index="0">hh</li>
-                <li data-index="1">qq</li>
-                <li data-index="2">aa</li>
-                <li data-index="3">zz</li>
+               
+                <li id="0" data-index="0"></li>
+                <li id="1" data-index="1">qq</li>
+                <li id="2" data-index="2">aa</li>
+                <li id="3" data-index="3">zz</li>
             </ul>
-            <p>"Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds"</p>
-            <button class="start">Submit</button>
+            <div id="initial">Enter intials: <input type="text" id="name"></div>
+
+            <button id="submit">Submit</button>
+            <button id="start">Start Quiz</button>
+            <h2 id="answer"></h2>
+            
         </div>
     </main>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

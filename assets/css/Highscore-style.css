@@ -1,0 +1,23 @@
+.container {
+    padding-top: 100px;
+    text-align: center;
+    height: 70vh;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20vh;
+    background-color: aqua;
+}
+
+h1{
+    
+    font-size: 3em;
+}
+
+li {
+    font-size: 1.5em;
+    background-color: blue;
+    width: 300px;
+    height: 40px;
+    margin: 15px;
+    text-align: center;
+}
