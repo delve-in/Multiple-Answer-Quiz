@@ -9,11 +9,13 @@ var initialsDiv = document.getElementById("initial");
 var textInput = document.getElementById("name");
 var submitButton = document.getElementById("submit");
 var subHeading = document.getElementById("sub-heading");
+
 var userList =[];
 var user ;
 var timeCount = 75;
 var time;
 var questionNum = 0;
+var answer ;
 
 choise.style.display ="none";
 initialsDiv.style.display="none";
@@ -43,11 +45,21 @@ var questionSet = [
     }
 ];
 
+function setTime (){
+    setTimeout (function() {
+        h2.classList.add("hidden")
+    },1000)
+}
+
 function init(){
+    
     
 }
 
 function score(){
+    Heading.style.display = "block";
+    h2.textContent = answer;
+    setTime();
     timeElement.textContent = "Time: " + timeCount;
     Heading.textContent = "All done!";
     choise.style.display ="none";
@@ -66,7 +78,7 @@ function score(){
     initialsDiv.style.display ="inline";
     textInput.style.display ="inline";
     submitButton.style.display ="block";
-    h2.textContent = "";
+    
 }
 
 function timer () {
@@ -77,15 +89,13 @@ function timer () {
 
         if (timeCount >0)
         {   
-            console.log("5");
             timeElement.textContent = "Time: " + timeCount;
             timeCount--;
         } 
         else
         {   
-            console.log("6");
             clearInterval(time);
-        score();
+            score();
         }
         
     }, 1000);
@@ -121,12 +131,13 @@ startButton.addEventListener("click", function(){
         li[i].addEventListener('click', (e)=>{
             var targetId = e.target.id;
             if (targetId == questionSet[questionNum-1].correct){
-                h2.textContent = "Correct!";
+                answer = "Correct!";
+                h2.textContent = answer;
                 question();
             }else{
-                console.log("no")
-                h2.textContent = "Wrong!";
-                timeCount = timeCount - 10;
+                answer = "Wrong!";
+                h2.textContent = answer;
+                timeCount = timeCount - 15;
                 question();
             }
         })

@@ -1,23 +1,54 @@
+:root{
+    --background : #FFF8E8;
+    --box : #C49BBB;
+}
+
+*{
+    background-color: var(--background);
+}
 .container {
-    padding-top: 100px;
+    display: flex;
+    flex : 0 0 1000px;
+    flex-wrap: wrap;
     text-align: center;
-    height: 70vh;
+
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 20vh;
-    background-color: aqua;
+    justify-content: center;
 }
 
 h1{
-    
+    width: 100%;
     font-size: 3em;
+    height: 75px;
 }
 
 li {
     font-size: 1.5em;
-    background-color: blue;
+    background-color: var(--box);
     width: 300px;
     height: 40px;
-    margin: 15px;
+    margin: 5px;
     text-align: center;
+}
+
+#list{
+    display: flex ;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#clear{
+    height: 50px;
+    width: 150px;
+    
+}
+
+#back{
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
 }
