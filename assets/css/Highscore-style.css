@@ -5,17 +5,6 @@
 *{
     background-color: var(--color);
 }
-.container {
-    display: flex;
-    flex : 0 0 1000px;
-    flex-wrap: wrap;
-    text-align: center;
-
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20vh;
-    justify-content: center;
-}
 
 h1{
     width: 100%;
@@ -35,6 +24,18 @@ li {
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.7);
 }
 
+.container {
+    display: flex;
+    flex : 0 0 1000px;
+    flex-wrap: wrap;
+    text-align: center;
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20vh;
+    justify-content: center;
+}
+
 #list{
     display: flex ;
     flex-direction: column;
@@ -43,14 +44,29 @@ li {
     margin-bottom: 10px;
 }
 
+#back{
+    height: 50px;
+    width: 150px;
+    margin-right: 10px;
+}
+
 #clear{
     height: 50px;
     width: 150px;
     
 }
 
-#back{
-    height: 50px;
-    width: 150px;
-    margin-right: 10px;
+@media screen and (max-width: 460px){
+    #back{
+        height: 50px;
+        width: 100px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    #clear{
+        height: 50px;
+        width: 100px;
+        
+    }
 }
