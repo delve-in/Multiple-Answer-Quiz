@@ -39,4 +39,4 @@ MIT License
 
 ## Deployed applicatin link
 
-[https://delve-in.github.io/](https://delve-in.github.io/Multiple-Choice-Quiz/)https://delve-in.github.io/Multiple-Choice-Quiz/
+(https://delve-in.github.io/Multiple-Choice-Quiz/)https://delve-in.github.io/Multiple-Choice-Quiz/
